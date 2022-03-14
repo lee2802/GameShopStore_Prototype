@@ -1,0 +1,192 @@
+<html>
+<head lang="en">
+   <title>Profile</title>
+   <link rel="stylesheet" href="reset.css" />
+   <link href="bootstrap3_defaultTheme/dist/css/bootstrap.css" rel="stylesheet">
+   <link rel="stylesheet" href="profile.css" />
+</head>
+
+<header>
+    <div id="logoRow" >
+      <div class="container">
+         <div class="row">
+            
+            <div class="col-md-4">
+               <form class="form-inline" role="search">
+               <div class="input-group">
+                  <label class="sr-only" for="search">Search</label>
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <span class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                  </span>
+               </div>
+               </form> 
+            </div>
+         </div>
+      </div>
+   </div>
+   </header>
+
+    
+<body>
+
+    <ul class = "topborder">
+        <li class = "leftsideli "><a href="mainpagewithlogin.html" >Main Page</a></li>
+        <li class = "leftsideli"><a >Category</a></li>
+        <li class = "leftsideli"><a> My Account</a></li>
+        <li class = "rightsideli"><a href="Login.html">Sign Out</a></li>
+        <li class="rightsideli active"><a href="myCart.html">My Cart</a></li>
+    </ul>
+
+<div class="container">
+    <div class="container1">
+        <!-- Profile Settings-->
+        <div class="container2">
+            <form class="userInfo">
+                <div class="Box">
+                    <div class="form-group">
+                        <label for="FirstName">First Name: </label>
+                        <input class="insert" type="text" placeholder="Enter First Name" value="" required>
+                    </div>
+                </div>
+                <div class="Box">
+                    <div class="form-group">
+                        <label for="LastName">Last Name: </label>
+                        <input class="insert" type="text" placeholder="Enter Last Name" value="" required>
+                    </div>
+                </div>
+                <div class="Box">
+                    <div class="form-group">
+                        <label for="email">E-mail Address: </label>
+                        <input class="insert" type="email" placeholder="Enter E-mail" value="" required>
+                    </div>
+                </div>
+                <div class="Box">
+                    <div class="form-group">
+                        <label for="phoneNum">Phone Number: </label>
+                        <input class="insert" type="text" placeholder="Enter Phone Number" value="" required>
+                    </div>
+                </div>
+				<div class="Box">
+                    <div class="form-group">
+                        <label for="gender">Gender: </label>
+                        <input type="radio" id="male" name="gender" value="male">
+						<label for="male">Male</label>
+						<input type="radio" id="female" name="gender" value="female">
+						<label for="female">Female</label>
+						<input type="radio" id="other" name="gender" value="other">
+						<label for="other">Other</label>
+                    </div>
+                </div>
+				<div class="Box">
+                    <div class="form-group">
+                        <label for="birthday">Birthday: </label>
+						<input  class="dateOfBirth" type="date" id="birthday" name="birthday">
+                    </div>
+                </div>
+				<div class="Box">
+                    <div id="HomeAddress">
+                        <label for="address">Address: </label>
+                        <input class="Address" type="text" placeholder="Enter Home Address" value="" required>
+                    </div>
+                </div>
+				
+				<div id="BoxBtn1">
+                    <div>
+                        <button class="btn" type="button">Update Profile</button>
+                    </div>
+                </div>
+				
+				<hr>
+				
+                <div id="PwsBox">
+					<h4>Change New Password: </h4>
+					<div class="Pws">
+                        <label for="currentPassword">Current Password: </label>
+                        <input class="insert" type="password" placeholder="Enter Current Password" value="" required>
+                    </div>
+                    <div class="Pws">
+                        <label for="password">New Password: </label>
+                        <input class="insert" type="password" placeholder="Enter New Password" value="" required>
+                    </div>
+                    <div class="Pws">
+                        <label for="re-password">Confirm Password: </label>
+                        <input class="insert" type="password" placeholder="Re-type Password" value="" required>
+                    </div>
+                </div>
+				
+				<div id="BoxBtn1">
+                    <div>
+                        <button class="btn" type="button">Change Password</button>
+                    </div>
+                </div>
+				
+				<hr>
+				
+				<div id="changePic">
+					<h4>Profile picture</h4>
+					<img src="logo.png" id="profile-pic" alt="Profile picture" />
+					<input type="file" id="my-file" />
+					<br>
+					<input type="button" value="Save changes" id="save" />
+				</div>
+				
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+<footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-3">
+            <h4><span class="glyphicon glyphicon-info-sign"></span> About Us</h4>
+            <p>Hello.</p>
+         </div>
+         <div class="col-md-3">
+            <h4><span class="glyphicon glyphicon-earphone"></span> Customer Service</h4>
+            <ul class="nav nav-stacked">
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>           
+         </div>
+         
+         <div class="col-md-3">
+            <h4><span class="glyphicon glyphicon-envelope"></span> Contact us</h4>
+            <form role="form">
+              <div class="form-group tight-form-group">
+                <label class="sr-only" for="name">Name</label>
+                <input type="text" class="form-control" name="email" placeholder="Enter name">
+              </div> 
+              <div class="form-group tight-form-group">
+                <label class="sr-only" for="email">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter email">
+              </div> 
+              <div class="form-group tight-form-group">
+                <label class="sr-only" for="email">Email</label>
+                <textarea class="form-control" rows="3" placeholder="Enter message"></textarea>
+              </div>   
+              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>  
+         </div>
+         
+      </div>
+   </div>
+   
+   <div id="copyrightRow">
+      <div class="container">
+         <div class="row">
+           <p class="text-muted">All images are copyright to their owners. This is just a hypothetical site
+           <span class="pull-right">&copy; 2014 Copyright Pachinko Game Store</span></p>
+         </div>
+      </div>
+   </div>
+</footer>
+
+    <script src="bootstrap3_defaultTheme/assets/js/jquery.js"></script>
+    <script src="bootstrap3_defaultTheme/dist/js/bootstrap.min.js"></script>
+
+</html>

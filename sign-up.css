@@ -1,0 +1,78 @@
+header, footer, nav, div, p, body {
+    font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif;
+    font-size: 1em;
+ }
+ 
+
+ header {
+    background-color: white;
+    
+    height: 3em;
+    padding: 100px 15px 30px 15px;
+    text-align: center;
+    border: 10px 10px;
+    background-image: url("logo2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  form {
+    border: 3px solid #f1f1f1;
+  }
+
+ input[type=text], input[type=password] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 10px 25px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+  }
+
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .CButton {
+    padding: 14px 20px;
+    /*border: 5px 30px 30px 15px;*/
+    background-color: #f44336;
+    float: auto;
+    width: 45%;
+  }
+
+ .SButton {
+    /*border: 5px 30px 30px 15px;*/
+    background-color: #4CAF50;
+    float: auto;
+    width: 45%;
+ }
+
+ .container {
+    padding: 20px;
+  }
+
+  .cancel-Or-Signup{
+      display: table;
+  }
+
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
+  
